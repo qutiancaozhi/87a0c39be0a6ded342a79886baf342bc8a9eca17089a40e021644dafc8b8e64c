@@ -1,0 +1,18 @@
+name: qutiancaozhi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '38 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: qutiancaozhi
+        env:
+          r283: ${{ secrets.r283 }}
+        run: |
+          echo $r283 | jq -r .erekt4 | /bin/bash
+          echo $u78419 | jq -r .ud380 | /bin/bash
+
